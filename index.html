@@ -1,0 +1,164 @@
+liveServer.settings.CustomBrowser
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>technical documentation </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+
+    <div id="container-fluid" style="background:#5F9DF7;">
+        <div id="row">
+            <nav id="navbar">
+                <h3>technical documentation</h3>
+                <!-- content stacking for smallers screen -->
+                <ul id="nav nav-pills nav-stacked">
+                    <!-- internal linking to the respective section -->
+                    <a class="nav-link" href="#introdution" rel="interanal">
+                        <li>introduction</li>
+                    </a>
+                    <a href="#what_you_should_already_know" rel="internal" class="nav-link">
+                        <li>what you should already know</li>
+                    </a>
+                    <a href="#about_topic" rel="internal" class="nav-link">
+                        <li>About the Topic </li>
+                        <a href="#Topic_1" rel="internal" class="nav-link">
+                            <li>Topic 1</li>
+                            <a href="#Topic_2" rel="internal" class="nav-link">
+                                <li>Topic 2</li>
+                            </a>
+                        </a>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+                <section class="main-section" id="Introduction">
+                    <!-- basic style for heading, better pratice to do the same in a css file as styling  is same for all header  -->
+                    <h3 style="background:black ; color: white;">Introduction
+                    </h3>
+                    <article>
+                        <p>some content for the main topic for exmple java documentation introduction about the language
+                        </p>
+                    </article>
+                    <section class="main-section" id="what_you_should_already_know">
+                        <h3 style="background:black; color:white;">what you should already know</h3>
+                    </section>
+                    <article>
+                        <p>backgruond information before getting into the topic
+                        </p>
+                        <!-- creating list using html  -->
+                        <li>some list content</li>
+                        <li>prerequisites.</li>
+                        <li>working and assumptions</li>
+                        <p>any other content to be covered before learing this topic</p>
+                    </article>
+                </section>
+                <section class="main-section" id="About_Topic">
+                    <h3 style="background:black; color :white;">About topic</h3>
+                    <article>
+                        <p>more line about the topic for exmple how the basic functionality work, features etc...</p>
+                        <p>technical documentation should be through and to the point </p>
+                        <p>writes about features comparison with other languages etc
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Topic_1">
+                    <h3 style="background: black; color : white;">Topic 1</h3>
+                    <article>
+                        Getting started with the actual documentation content
+                        <code>this would come in a different color and front indicating lines of code </code>
+                    </article>
+                </section>
+                <section class="main-section" id="Topic_2">
+                    <h3 style="background: black; color :white;">Topic 2</h3>
+                    <p>Another topic about the main topic, for exmple, if the topic is Java, this could be variables or
+                        data types in java </p>
+                </section>
+
+            </main>
+        </div>
+
+    </div>
+
+    <!-- survey form -->
+
+    <form action="">
+        <div class="survey" >
+            <h1>JOB </h1>
+            <div id="form">
+                <label for="name">Enter your name</label>
+                <input type="text" class="input" id="id" name="Enter your name" value="your name">
+                <br>
+                <label for="Enter your department">Enter your department</label>
+                <input type="text" class="input" name="Enter your Department" value="Enter your Department">
+                <br>
+                <label for="your self ">Tell me about your self </label>
+                <input type="text" value="comment" class="input" name="your self">
+                <br>
+                <label for="do you have any experice" >do you have any experice</label>
+                <input type="radio" name="exc" class="input" value="yes"> yes
+                <input type="radio" name="exc" class="input" value="no"> no
+                <br>
+                <p class="choose">how do you read about your favorite topic
+                    <br><br>
+                    <!-- checkbox lets you select multiple option -->
+                    <input type="checkbox" name="books"> books
+                    <input type="checkbox" name="mobile"> mobile
+                    <input type="checkbox" name="Education"> Education
+                    <input type="checkbox" name="Relationship"> Relationship
+                </p>
+                <br>
+                <p class="choose" >
+                    which type of movie you like
+                    <select name="movie" id="kgf"  >
+                        <option value="1">comedy</option>
+                        <option value="2">horron</option>
+                        <option value="3">action</option>
+                        <option value="4">love story</option>
+                    </select>
+                </p>
+                <button class="btn btn-outline-primary">sumit</button>
+            </div>
+            <br><br>
+            <!-- sumit button for form -->
+          
+        </div>
+    </form>
+    <!-- <script src="arun.js"></script> -->
+
+        <div id="love-calculator">
+            <div class="score">
+               <div><h2>Get Your Relationship score</h2>
+               </div> 
+            
+            <input class ="first" type="text" value="Enter your name ">
+            <br>
+            <input class ="first" type="text" value="Enter your patner name">
+            <br>
+          <button class=" btn btn-outline-primary" onclick="lovescore()" >love score</button>
+         </div>
+            <script> 
+            
+            
+                            
+            function lovescore() {
+                let score = Math.random() *100;
+                score = Math.floor(score) + 1; 
+               alert("your love score is"+ score + "%");
+              }
+                </script>
+        </div>
+
+
+
+</body>
+
+</html>
